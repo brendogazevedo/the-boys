@@ -9,21 +9,17 @@
       padding-block: 24px;
     }
 
-    .initial-main {
-      display: flex;
-      justify-content: space-between;
-      height: 200px;
+   .initial-main {
+      flex-direction: column;
+      align-items: center;
 
       h1 {
-        position: static;
-        font-size: 30px;
-        align-items: center;
-        justify-content: center;
+        font-size: 18px;
       }
-
+      
       img {
-        position: static;
-        width: 100%;
+        width: 400px;
+        object-fit: cover;
       }
     }
 
@@ -47,5 +43,20 @@
 }
 
 
+/* seçaocontact-somebody  */
+@media (max-width: 800px) {
+  .contact-somebody {
+    width: 500px;
 
+    table {
 
+      tr th {
+        font-size: 18px;
+      }
+
+      tr td {
+        font-size: 16px;
+      }
+    }
+  }
+}
