@@ -1,0 +1,21 @@
+@media (max-width: 1280px) {
+  .the-boys {
+    display: flex;
+    flex-direction: column;
+
+    .butcher, .hughie, .milk, .frenchie, .kimiko, .annie  {
+        img {
+          align-self: center; 
+          object-fit: cover;
+          width: 200px;
+        }
+
+        p {
+          align-items: center;
+          padding-block: 30px;
+        }
+    }
+ 
+  }
+
+}

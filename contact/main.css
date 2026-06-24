@@ -1,0 +1,23 @@
+.contact-somebody {
+  display: flex;
+  justify-content: center;
+  padding-block: 24px;
+
+  table {
+    width: 1280px;
+    height: 720px;
+    box-shadow: 6px 12px 34px -2px #FFD700;
+    padding: 20px;
+  }
+
+  tr th {
+    font-size: 30px;
+  }
+
+  tr td {
+    font-size: 18px;
+    text-align: center;
+    box-shadow: -16px -12px 14px -3px #9E0C0F;
+    
+  }
+}

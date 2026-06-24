@@ -1,0 +1,70 @@
+.the-boys {
+  display: grid;
+  grid-template-areas:
+    "butcher butcher butcher"
+    "hughie milk frenchie"
+    "kimiko annie annie";
+
+  padding-block: 20px;
+  gap: 20px;
+
+  .butcher {
+    grid-area: butcher;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 30px;
+    box-shadow: 6px 12px 34px -2px var(--secondary-color);
+
+    img {
+      align-self: center;
+      width: 400px;
+    }
+
+    p {
+      align-self: center;
+      width: 70%;
+      padding-left: 32px;
+    }
+  }
+
+  .hughie {
+    grid-area: hughie;
+  }
+
+  .milk {
+    grid-area: milk;
+  }
+
+  .frenchie {
+    grid-area: frenchie;
+  }
+
+  .kimiko {
+    grid-area: kimiko;
+  }
+
+  .annie {
+    grid-area: annie;
+  }
+}
+
+.content-the-boys {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding: 30px;
+  box-shadow: 6px 12px 34px -2px var(--secondary-color);
+
+  img {
+    align-self: center;
+    width: 400px;
+    height: 200px;
+  }
+
+  p {
+    align-self: center;
+    padding-left: 32px;
+  }
+}
+

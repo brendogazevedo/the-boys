@@ -1,0 +1,51 @@
+@media (max-width: 800px) {
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    position: static;
+
+    .nav-bar {
+      flex-direction: column;
+      padding-block: 24px;
+    }
+
+    .initial-main {
+      display: flex;
+      justify-content: space-between;
+      height: 200px;
+
+      h1 {
+        position: static;
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      img {
+        position: static;
+        width: 100%;
+      }
+    }
+
+    .photo-hero {
+      .caracters {
+        img {
+          width: 90px;
+        }
+      }
+    }
+    .contact {
+      form {
+        padding-inline: 24px;
+      }
+    }
+  }
+
+  footer {
+    gap: 10px;
+  }
+}
+
+
+
+

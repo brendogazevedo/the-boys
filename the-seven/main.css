@@ -1,0 +1,74 @@
+.the-seven {
+  display: grid;
+  grid-template-areas:
+    "homelander homelander homelander"
+    "the-deep black-noir sister-sage"
+    "firecracker stormfront a-train";
+
+  padding-block: 20px;
+  gap: 20px;
+
+  .homelander {
+    grid-area: homelander;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    padding: 30px;
+    box-shadow: 6px 12px 34px -2px #00629b;
+
+    img {
+      align-self: center;
+      width: 600px;
+    }
+
+    p {
+      align-self: center;
+      width: 70%;
+      padding-block: 32px;
+    }
+  }
+
+  .the-deep {
+    grid-area: the-deep;
+  }
+
+  .black-noir {
+    grid-area: black-noir;
+  }
+
+  .sister-sage {
+    grid-area: sister-sage;
+  }
+
+  .firecracker {
+    grid-area: firecracker;
+  }
+
+  .stormfront {
+    grid-area: stormfront;
+  }
+
+  .a-train {
+    grid-area: a-train;
+  }
+}
+
+.content-the-seven {
+  display: flex;
+  /* flex-direction: column; */
+  background-color: var(--primary-color);
+  padding: 30px;
+  box-shadow: 6px 12px 34px -2px #00629b;
+
+  img {
+    align-self: center;
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  p {
+    align-self: center;
+    padding-left: 32px;
+  }
+}

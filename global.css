@@ -1,47 +1,112 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* 
 Fundo (Background): Use o Cinza Chumbo #2C2C2C como base para todo o layout, aplicando o Preto Profundo #121212 para separar seções.Textos Principais: Branco Gelo #F8F9FA para máxima legibilidade.Botões de Ação (CTA): Vermelho Sangue #9E0C0F ou Amarelo Neon #FFD700 para chamar a atenção imediata.Detalhes de Hover (Efeito ao passar o mouse): O Azul Corporativo #00629B cria um contraste interessante se você quiser uma vibe "Capitão Pátria". */
 
 :root {
+  --background-color: #2c2c2c;
+  --primary-color: #121212;
+  --secondary-color: #9e0c0f;
+  --text-color: #f8f9fa;
 
-    --background-color: #2c2c2c;
-    --primary-color: #121212;
-    --secondary-color: #9e0c0f;
-    --text-color: #f8f9fa;
-
-    --primary-font: "Permanent Marker", cursive;
-    --secondary-font: "Inter", sans-serif;
+  --primary-font: "Permanent Marker", cursive;
+  --secondary-font: "Inter", sans-serif;
 }
 
 body {
-    background-color: var(--background-color);
+  background-color: var(--background-color);
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 28px 38px;
-    background-color: var(--primary-color);
-    
-    img {
-        width: 150px;
-        object-fit: cover;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+  background-color: var(--primary-color);
+  position: sticky;
+  top: 0;
+}
 
-    .nav-bar{
-        display: flex;
-        gap: 18px;
-        list-style: none;
-        
-        a {
-            color: var(--secondary-color);
-            font-size: 24px;
-            font-family: var(--primary-font);
-        }
-    }
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  margin-top: 20px;
+}
+
+table {
+  font-family: var(--secondary-font);
+  color: var(--text-color);
+}
+h1,
+h2 {
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+}
+
+p {
+  font-family: var(--secondary-font);
+  color: var(--text-color);
+}
+
+a {
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+span {
+  font-family: var(--secondary-font);
+  color: var(--text-color);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 47%;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--secondary-color);
+  padding-block: 8px;
+  color: var(--color-text);
+  font-size: 18px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-color);
+}
+
+button {
+  cursor: pointer;
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding-block: 8px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 16px;
+  font-size: 24px;
 }
