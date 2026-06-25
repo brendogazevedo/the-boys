@@ -16,7 +16,7 @@
       h1 {
         font-size: 18px;
       }
-      
+
       img {
         width: 400px;
         object-fit: cover;
@@ -25,8 +25,14 @@
 
     .photo-hero {
       .caracters {
+        width: 90px;
+        
         img {
           width: 90px;
+        }
+
+        span {
+          font-size: 14px;
         }
       }
     }
