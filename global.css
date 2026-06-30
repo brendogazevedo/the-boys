@@ -120,6 +120,7 @@ button {
   bottom: 120px;
   right: 100px;
   cursor: pointer;
+  z-index: 5;
 
   img {
     width: 100px;
